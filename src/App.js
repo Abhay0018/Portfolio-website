@@ -1011,6 +1011,7 @@ const Portfolio = () => {
 
           .hero-text p {
             font-size: 1rem;
+            margin-bottom: 2rem;
           }
 
           .hero-buttons {
@@ -1128,6 +1129,7 @@ const Portfolio = () => {
 
           #contact {
             padding: 4rem 2rem;
+            border-radius: 30px;
           }
 
           .contact-grid {
@@ -1136,55 +1138,175 @@ const Portfolio = () => {
           }
         }
 
+        /* iPhone SE and small phones (375px and below) */
         @media (max-width: 480px) {
+          nav {
+            padding: 0.75rem 1rem;
+          }
+
           .logo {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
           }
 
           .nav-links {
-            gap: 0.75rem;
-            font-size: 0.7rem;
+            gap: 0.5rem;
+            font-size: 0.65rem;
+          }
+
+          .nav-links button {
+            padding: 0.4rem 0;
+          }
+
+          .hero {
+            padding: 4rem 1rem 2rem;
+          }
+
+          .hero-content {
+            gap: 2rem;
           }
 
           .hero-text h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
+            margin-bottom: 0.75rem;
           }
 
           .hero-text h2 {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
           }
 
           .hero-text p {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
           }
 
-          .section-title {
-            font-size: 2rem;
+          .btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.85rem;
           }
 
           .floating-card {
             padding: 1.5rem;
+            border-radius: 20px;
+          }
+
+          .stats-grid {
+            gap: 1rem;
           }
 
           .stat-number {
             font-size: 2rem;
           }
 
+          .stat-label {
+            font-size: 0.7rem;
+          }
+
           .social-link {
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
+          }
+
+          section {
+            padding: 3rem 1rem;
+          }
+
+          .section-title {
+            font-size: 2rem;
+            letter-spacing: 2px;
+          }
+
+          .section-subtitle {
+            font-size: 0.9rem;
+          }
+
+          .section-header {
+            margin-bottom: 2.5rem;
           }
 
           .about-content h3 {
-            font-size: 1.75rem;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
           }
 
-          .project-content h3 {
-            font-size: 1.75rem;
+          .about-content p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+          }
+
+          .education-card {
+            padding: 1.25rem;
+            border-radius: 15px;
+          }
+
+          .education-card h4 {
+            font-size: 1.1rem;
+          }
+
+          .education-card p {
+            font-size: 0.85rem;
+          }
+
+          .skills-grid {
+            gap: 1.25rem;
+          }
+
+          .skill-card {
+            padding: 1.5rem;
+            border-radius: 20px;
+          }
+
+          .skill-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+          }
+
+          .skill-card h3 {
+            font-size: 1.2rem;
+          }
+
+          .skill-tag {
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+          }
+
+          .project-card {
+            border-radius: 20px;
+            min-height: auto;
           }
 
           .project-visual {
+            min-height: 200px;
             font-size: 3rem;
+          }
+
+          .project-content {
+            padding: 1.5rem;
+          }
+
+          .project-content h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.75rem;
+          }
+
+          .project-role {
+            font-size: 0.8rem;
+            margin-bottom: 0.75rem;
+          }
+
+          .project-content p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+          }
+
+          .project-content ul {
+            margin-bottom: 1.5rem;
+          }
+
+          .project-content li {
+            font-size: 0.85rem;
+            margin-bottom: 0.6rem;
           }
 
           .tech-stack {
@@ -1192,8 +1314,153 @@ const Portfolio = () => {
           }
 
           .tech-badge {
-            font-size: 0.75rem;
-            padding: 0.4rem 1rem;
+            font-size: 0.7rem;
+            padding: 0.4rem 0.8rem;
+          }
+
+          .leadership-card {
+            padding: 1.5rem;
+            gap: 1.25rem;
+            border-radius: 20px;
+          }
+
+          .leadership-icon {
+            width: 50px;
+            height: 50px;
+            font-size: 1.25rem;
+          }
+
+          .leadership-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.4rem;
+          }
+
+          .leadership-content p {
+            font-size: 0.85rem;
+          }
+
+          .leadership-year {
+            font-size: 1.25rem;
+          }
+
+          .certificates-grid {
+            gap: 2rem;
+          }
+
+          .certificate-card {
+            padding: 1.5rem;
+            border-radius: 20px;
+          }
+
+          .certificate-badge {
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+          }
+
+          .certificate-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.6rem;
+          }
+
+          .certificate-venue {
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+          }
+
+          .certificate-card li {
+            font-size: 0.85rem;
+            margin-bottom: 0.6rem;
+          }
+
+          #contact {
+            padding: 3rem 1.5rem;
+            border-radius: 25px;
+          }
+
+          .contact-grid {
+            gap: 1.25rem;
+          }
+
+          .contact-item {
+            padding: 1.5rem;
+            border-radius: 15px;
+          }
+
+          .contact-icon {
+            width: 50px;
+            height: 50px;
+          }
+
+          .contact-item h4 {
+            font-size: 1rem;
+          }
+
+          .contact-item a,
+          .contact-item p {
+            font-size: 0.85rem;
+          }
+
+          footer {
+            padding: 2rem 1rem;
+          }
+
+          footer p {
+            font-size: 0.85rem;
+          }
+        }
+
+        /* Extra small phones (320px - iPhone SE 1st gen, etc) */
+        @media (max-width: 375px) {
+          .logo {
+            font-size: 1.4rem;
+          }
+
+          .nav-links {
+            gap: 0.4rem;
+            font-size: 0.6rem;
+          }
+
+          .hero-text h1 {
+            font-size: 2rem;
+          }
+
+          .hero-text h2 {
+            font-size: 1.1rem;
+          }
+
+          .hero-text p {
+            font-size: 0.85rem;
+          }
+
+          .stats-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+          }
+
+          .stat-number {
+            font-size: 1.75rem;
+          }
+
+          .stat-label {
+            font-size: 0.65rem;
+          }
+
+          .section-title {
+            font-size: 1.75rem;
+          }
+
+          .about-content h3 {
+            font-size: 1.4rem;
+          }
+
+          .project-content h3 {
+            font-size: 1.4rem;
+          }
+
+          .skill-card h3 {
+            font-size: 1.1rem;
           }
         }
 
@@ -1210,6 +1477,21 @@ const Portfolio = () => {
 
           section {
             padding: 3rem 2rem;
+          }
+        }
+
+        /* Very short screens in landscape */
+        @media (max-height: 500px) and (orientation: landscape) {
+          .hero {
+            padding: 2rem 2rem;
+          }
+
+          section {
+            padding: 2rem 2rem;
+          }
+
+          .section-header {
+            margin-bottom: 2rem;
           }
         }
       `}</style>
