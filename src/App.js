@@ -917,6 +917,16 @@ const Portfolio = () => {
         }
 
         /* Responsive Design */
+        @media (max-width: 1200px) {
+          section {
+            padding: 6rem 3rem;
+          }
+
+          .hero {
+            padding: 5rem 3rem;
+          }
+        }
+
         @media (max-width: 1024px) {
           .hero-content,
           .about-grid,
@@ -925,7 +935,11 @@ const Portfolio = () => {
           }
 
           .hero-text h1 {
-            font-size: 4rem;
+            font-size: 4.5rem;
+          }
+
+          .hero-text h2 {
+            font-size: 2rem;
           }
 
           .project-visual {
@@ -937,7 +951,7 @@ const Portfolio = () => {
           }
 
           section {
-            padding: 6rem 2rem;
+            padding: 5rem 2rem;
           }
 
           .leadership-card {
@@ -948,36 +962,254 @@ const Portfolio = () => {
           .leadership-icon {
             margin: 0 auto;
           }
-        }
-
-        @media (max-width: 768px) {
-          .nav-links {
-            gap: 1.5rem;
-            font-size: 0.85rem;
-          }
-
-          .hero-text h1 {
-            font-size: 3rem;
-          }
-
-          .hero-text h2 {
-            font-size: 1.8rem;
-          }
-
-          .section-title {
-            font-size: 3rem;
-          }
-
-          .hero-buttons {
-            flex-direction: column;
-          }
 
           .certificates-grid {
             grid-template-columns: 1fr;
           }
 
+          .stats-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        @media (max-width: 768px) {
+          nav {
+            padding: 1rem 1.5rem;
+            flex-wrap: wrap;
+          }
+
           .logo {
             font-size: 2rem;
+          }
+
+          .nav-links {
+            gap: 1rem;
+            font-size: 0.75rem;
+          }
+
+          .nav-links button {
+            padding: 0.5rem 0;
+          }
+
+          .hero {
+            padding: 5rem 1.5rem 3rem;
+            min-height: auto;
+          }
+
+          .hero-content {
+            gap: 3rem;
+          }
+
+          .hero-text h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+          }
+
+          .hero-text h2 {
+            font-size: 1.5rem;
+          }
+
+          .hero-text p {
+            font-size: 1rem;
+          }
+
+          .hero-buttons {
+            flex-direction: column;
+            gap: 1rem;
+          }
+
+          .btn {
+            padding: 0.875rem 2rem;
+            font-size: 0.9rem;
+            width: 100%;
+            justify-content: center;
+          }
+
+          .floating-card {
+            padding: 2rem;
+          }
+
+          .stats-grid {
+            gap: 1.5rem;
+          }
+
+          .stat-number {
+            font-size: 2.5rem;
+          }
+
+          .stat-label {
+            font-size: 0.8rem;
+          }
+
+          .social-links {
+            justify-content: center;
+          }
+
+          .scroll-indicator {
+            display: none;
+          }
+
+          section {
+            padding: 4rem 1.5rem;
+          }
+
+          .section-title {
+            font-size: 2.5rem;
+          }
+
+          .section-subtitle {
+            font-size: 1rem;
+          }
+
+          .section-header {
+            margin-bottom: 3rem;
+          }
+
+          .about-content h3 {
+            font-size: 2rem;
+          }
+
+          .about-content p {
+            font-size: 1rem;
+          }
+
+          .education-card {
+            padding: 1.5rem;
+          }
+
+          .skills-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+          }
+
+          .skill-card {
+            padding: 2rem;
+          }
+
+          .project-content {
+            padding: 2rem;
+          }
+
+          .project-content h3 {
+            font-size: 2rem;
+          }
+
+          .project-visual {
+            min-height: 250px;
+            font-size: 4rem;
+          }
+
+          .leadership-card {
+            padding: 2rem;
+            gap: 1.5rem;
+          }
+
+          .leadership-icon {
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+          }
+
+          .leadership-content h3 {
+            font-size: 1.3rem;
+          }
+
+          .leadership-year {
+            font-size: 1.5rem;
+          }
+
+          .certificate-card {
+            padding: 2rem;
+          }
+
+          .certificate-card h3 {
+            font-size: 1.5rem;
+          }
+
+          #contact {
+            padding: 4rem 2rem;
+          }
+
+          .contact-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .logo {
+            font-size: 1.75rem;
+          }
+
+          .nav-links {
+            gap: 0.75rem;
+            font-size: 0.7rem;
+          }
+
+          .hero-text h1 {
+            font-size: 2.5rem;
+          }
+
+          .hero-text h2 {
+            font-size: 1.25rem;
+          }
+
+          .hero-text p {
+            font-size: 0.95rem;
+          }
+
+          .section-title {
+            font-size: 2rem;
+          }
+
+          .floating-card {
+            padding: 1.5rem;
+          }
+
+          .stat-number {
+            font-size: 2rem;
+          }
+
+          .social-link {
+            width: 45px;
+            height: 45px;
+          }
+
+          .about-content h3 {
+            font-size: 1.75rem;
+          }
+
+          .project-content h3 {
+            font-size: 1.75rem;
+          }
+
+          .project-visual {
+            font-size: 3rem;
+          }
+
+          .tech-stack {
+            gap: 0.5rem;
+          }
+
+          .tech-badge {
+            font-size: 0.75rem;
+            padding: 0.4rem 1rem;
+          }
+        }
+
+        /* Landscape phones */
+        @media (max-width: 896px) and (orientation: landscape) {
+          .hero {
+            min-height: auto;
+            padding: 3rem 2rem;
+          }
+
+          .hero-content {
+            gap: 3rem;
+          }
+
+          section {
+            padding: 3rem 2rem;
           }
         }
       `}</style>
