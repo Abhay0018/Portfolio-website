@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Code2, Mail, Phone, MapPin, Award, Briefcase, GraduationCap, Sparkles, ExternalLink, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Code2, Mail, Phone, MapPin, Award, Briefcase, Sparkles, ChevronDown } from 'lucide-react';
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('home');
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isVisible, setIsVisible] = useState({});
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -139,18 +137,21 @@ const Portfolio = () => {
           list-style: none;
         }
 
-        .nav-links a {
+        .nav-links button {
           color: var(--text-muted);
-          text-decoration: none;
+          background: none;
+          border: none;
           font-weight: 500;
           font-size: 0.95rem;
           text-transform: uppercase;
           letter-spacing: 1px;
           transition: all 0.3s ease;
           position: relative;
+          cursor: pointer;
+          font-family: 'Outfit', sans-serif;
         }
 
-        .nav-links a::after {
+        .nav-links button::after {
           content: '';
           position: absolute;
           bottom: -5px;
@@ -161,11 +162,11 @@ const Portfolio = () => {
           transition: width 0.3s ease;
         }
 
-        .nav-links a:hover {
+        .nav-links button:hover {
           color: var(--text);
         }
 
-        .nav-links a:hover::after {
+        .nav-links button:hover::after {
           width: 100%;
         }
 
@@ -261,6 +262,7 @@ const Portfolio = () => {
           gap: 0.5rem;
           text-transform: uppercase;
           letter-spacing: 1px;
+          font-family: 'Outfit', sans-serif;
         }
 
         .btn-primary {
@@ -997,10 +999,10 @@ const Portfolio = () => {
       <nav>
         <div className="logo" onClick={() => scrollToSection('hero')}>AS</div>
         <ul className="nav-links">
-          <li><a onClick={() => scrollToSection('about')}>About</a></li>
-          <li><a onClick={() => scrollToSection('skills')}>Skills</a></li>
-          <li><a onClick={() => scrollToSection('projects')}>Projects</a></li>
-          <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
+          <li><button onClick={() => scrollToSection('about')}>About</button></li>
+          <li><button onClick={() => scrollToSection('skills')}>Skills</button></li>
+          <li><button onClick={() => scrollToSection('projects')}>Projects</button></li>
+          <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
         </ul>
       </nav>
 
@@ -1044,13 +1046,13 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="social-links">
-                <a href="https://www.linkedin.com/in/abhay-shukla-8ba30529a/" target="_blank" className="social-link">
+                <a href="https://www.linkedin.com/in/abhay-shukla-8ba30529a/" target="_blank" rel="noreferrer" className="social-link">
                   <Linkedin size={20} />
                 </a>
-                <a href="https://github.com/abhayshukla" target="_blank" className="social-link">
+                <a href="https://github.com/abhayshukla" target="_blank" rel="noreferrer" className="social-link">
                   <Github size={20} />
                 </a>
-                <a href="https://leetcode.com/u/Abhay0018/" target="_blank" className="social-link">
+                <a href="https://leetcode.com/u/Abhay0018/" target="_blank" rel="noreferrer" className="social-link">
                   <Code2 size={20} />
                 </a>
               </div>
